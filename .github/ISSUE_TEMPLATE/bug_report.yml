@@ -12,14 +12,14 @@ body:
     attributes:
       label: ¿En qué cliente juegas?
       options:
-      - enGB
-      - enUS
-      - deDE
       - esES
+      - enUS
+      - enGB
+      - deDE
       - esMX
       - frFR
       - ruRU
-      - Other
+      - Otro
     validations:
       required: true
   - type: dropdown
@@ -82,6 +82,7 @@ body:
     id: modules
     attributes:
       label: Modules
+      render: shell
       description: |
         ¡No modifique este campo!
         Se completa automaticamente.
@@ -97,6 +98,7 @@ body:
     id: server
     attributes:
       label: Servidor
+      render: shell
       description: |
         ¡No modifique este campo!
         Se completa automaticamente.
