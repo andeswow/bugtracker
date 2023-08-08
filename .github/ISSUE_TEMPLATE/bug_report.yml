@@ -1,0 +1,103 @@
+name: Reporte de bugs
+description: Crear un reporte para ayudarnos a mejorar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tomarse su tiempo para completar un informe de errores.
+        Complete los campos marcados en rojo.
+        Los reportes que no cumplan los requisitos serán debatidos y cerrados.
+  - type: dropdown
+    id: client
+    attributes:
+      label: ¿En qué cliente juegas?
+      options:
+      - enGB
+      - enUS
+      - deDE
+      - esES
+      - esMX
+      - frFR
+      - ruRU
+      - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: faction
+    attributes:
+      label: Facción
+      options:
+      - Alianza
+      - Horda
+      - Ambas
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Describe el problema
+      description: |
+        Por favor, detalla y da informacion para validar el problema.
+        Link spells, NPCs, quests etc: https://wowgaming.altervista.org/aowow/
+        Tambien puede utilizar: https://www.wowhead.com/wotlk/es
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+      description: |
+        Describe cómo debería funcionar sin el error. Enlace a evidencia si es posible, como videos de YouTube o comentarios de Wowhead de la época.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Pasos para reproducir el problema
+      description: |
+        Describa con precisión cómo reproducir el error para que podamos corregirlo o confirmar su existencia:
+        Ejemplos (no obligatorios / opciones) para reproducir el problema.
+        No es necesario responder a todas las preguntas a continuación, son solo sugerencias.
+        - ¿Con que npc tengo que hablar?
+        - ¿Que quest debo tomar?
+        - ¿Que hechizo debo utilizar?
+        - ¿Que item equipar?
+        - e.t.c
+      placeholder: |
+        1. 
+        2. 
+        3. 
+        4. 
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema Operativo
+      options:
+      - Debian 11
+    validations:
+      required: true
+  - type: textarea
+    id: modules
+    attributes:
+      label: Modules
+      enabled: false
+      description: |
+        ¡No modifique este campo!
+        Se completa automaticamente.
+      value: |
+        - [mod-aoe-loot](https://github.com/azerothcore/mod-aoe-loot)
+        - [mod-recruit-friend](https://github.com/pangolp/mod-recruit-friend)
+        - [mod-individual-xp](https://github.com/azerothcore/mod-individual-xp)
+        - [mod-npc-promotion](https://github.com/pangolp/mod-npc-promotion)
+        - [mod-duel-reset](https://github.com/azerothcore/mod-duel-reset)
+        - [mod-transmog](https://github.com/azerothcore/mod-transmog)
+        - [mod-quest-loot-party](https://github.com/pangolp/mod-quest-loot-party)
+  - type: textarea
+    id: server
+    attributes:
+      label: Servidor
+      enabled: false
+      value: |
+        AndesWOW
