@@ -82,7 +82,6 @@ body:
     id: modules
     attributes:
       label: Modules
-      enabled: false
       description: |
         ¡No modifique este campo!
         Se completa automaticamente.
@@ -98,6 +97,8 @@ body:
     id: server
     attributes:
       label: Servidor
-      enabled: false
+      description: |
+        ¡No modifique este campo!
+        Se completa automaticamente.
       value: |
         AndesWOW
