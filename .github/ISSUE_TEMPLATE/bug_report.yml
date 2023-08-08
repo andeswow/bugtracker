@@ -81,8 +81,7 @@ body:
   - type: textarea
     id: modules
     attributes:
-      label: Modules
-      render: shell
+      label: Modulos
       description: |
         ¡No modifique este campo!
         Se completa automaticamente.
@@ -94,13 +93,11 @@ body:
         - [mod-duel-reset](https://github.com/azerothcore/mod-duel-reset)
         - [mod-transmog](https://github.com/azerothcore/mod-transmog)
         - [mod-quest-loot-party](https://github.com/pangolp/mod-quest-loot-party)
-  - type: textarea
+  - type: dropdown
     id: server
     attributes:
-      label: Servidor
-      render: shell
-      description: |
-        ¡No modifique este campo!
-        Se completa automaticamente.
-      value: |
-        AndesWOW
+      label: Nombre del servidor
+      options:
+      - AndesWOW
+    validations:
+      required: true
